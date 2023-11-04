@@ -8,7 +8,7 @@ import pexpect  # for interacting with command line prompts
 import logging  # for logging to help debug and troubleshoot the program
 from functools import wraps  # for using function decorators
 import os
-from outline_vpn.outline_vpn import OutlineVPN
+# from outline_vpn.outline_vpn import OutlineVPN
 from manager import TokenManager
 import time
 from datetime import datetime, timedelta
