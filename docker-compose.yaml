@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  outline_bot:
+    build: .
+    container_name: outline_bot
+    volumes:
+      - ./app:/app
+    # restart: always
+    environment:
+      - TELEGRAM_API_TOKEN=6067295555:AAEoDHGbjepVV7RhvtUpCG0o6aFTL_uPGas
+      - PAYMENT_PROVIDER_TOKEN=1920051371:TEST:638168938018032312
+      - OUTLINE_VPN_CREDENTIAL=https://45.133.216.95:55614/8zNMmnzClU3qvo-psvQddA
+    networks:
+      - mynetwork  # Добавляем сеть
+networks:
+  mynetwork:  # Определяем сеть
